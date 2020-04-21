@@ -1,0 +1,55 @@
+= Biometrics Security Interpretation Team (BIT) Membership <DATE>
+:showtitle:
+:table-caption: Table
+:revnumber: 0.1
+:revdate: 2020-04-21
+
+:iTC-longname: Biometrics Security
+:iTC-shortname: BIO-iTC
+:iTC-email: isec-itc-bio-info@ipa.go.jp
+:iTC-website: https://biometricitc.github.io/
+:iTC-GitHub: https://github.com/biometricITC/cPP-biometrics
+:iTC-ITname: BIT
+
+== {iTC-ITname} Membership
+[cols=".^2,.^2,.^2,.^2,.^1",options="header"]
+|====
+
+|Position
+|Name
+|Organization
+|Type
+|Joined
+
+|Chair
+|Johann Sebastian Bach
+|Mr. Coffee
+|Vendor
+|1/1/2019
+
+|Deputy Chair
+|
+|
+|Scheme
+|
+
+|Secretary
+|
+|
+|
+|
+
+|Member
+|
+|
+|Lab
+|
+
+|Non-Voting
+|
+|
+|
+|
+
+
+|====
