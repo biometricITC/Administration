@@ -2,7 +2,7 @@
 :showtitle:
 :table-caption: Table
 :revnumber: 0.1
-:revdate: 2020-04-21
+:revdate: 2020-05-14
 
 :iTC-longname: Biometrics Security
 :iTC-shortname: BIO-iTC
@@ -36,7 +36,12 @@ Approvals that occur through the GitHub approval process are automatically recor
 ^|{iTC-ITname}
 |This is a normal approval within GitHub (of a pull request). There are no rejections or blocks on the change.
 
-|Technical Recommendation
+.2+|Technical Recommendation
+|GitHub
+|75%
+^|{iTC-ITname}
+|The {iTC-ITname} must first approve a change with no rejections or blocks on the change. The approved change will then be submitted to the entire {iTC-shortname} for approval.
+
 |Offline (not GitHub)
 |66% with fewer than 25% negative
 ^|iTC
