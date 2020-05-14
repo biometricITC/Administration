@@ -48,3 +48,6 @@ Approvals that occur through the GitHub approval process are automatically recor
 |If the change has been determined to be sufficiently large or a consensus decision cannot be made by the {iTC-ITname}, the final determination will be done by the whole iTC.
 
 |====
+
+== Approval Process Note (At {iTC-ITname} launch)
+The {iTC-shortname} will follow the Technical Recommendation approval process for all updates. This may be changed later by the {iTC-shortname} through the normal approval process as defined in the ToR.
