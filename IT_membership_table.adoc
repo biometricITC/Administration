@@ -2,7 +2,7 @@
 :showtitle:
 :table-caption: Table
 :revnumber: 0.1
-:revdate: 2020-04-21
+:revdate: 2020-05-14
 
 :iTC-longname: Biometrics Security
 :iTC-shortname: BIO-iTC
@@ -22,10 +22,10 @@
 |Joined
 
 |Chair
-|Johann Sebastian Bach
-|Mr. Coffee
+|Brian Wood
+|Samsung
 |Vendor
-|1/1/2019
+|6-1-2020
 
 |Deputy Chair
 |
