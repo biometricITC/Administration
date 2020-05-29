@@ -2,7 +2,7 @@
 :showtitle:
 :table-caption: Table
 :revnumber: 0.1
-:revdate: 2020-05-14
+:revdate: 2020-05-29
 
 :iTC-longname: Biometrics Security
 :iTC-shortname: BIO-iTC
@@ -45,9 +45,14 @@ Approvals that occur through the GitHub approval process are automatically recor
 |Offline (not GitHub)
 |66% with fewer than 25% negative
 ^|iTC
-|If the change has been determined to be sufficiently large or a consensus decision cannot be made by the {iTC-ITname}, the final determination will be done by the whole iTC.
+|The {iTC-shortname} will vote on the change proposed by the {iTC-ITname}. The vote will be conducted by some means not in GitHub, but will be recorded (totals only) with the pull request once the vote has closed.
 
 |====
+
+== Offline Voting
+Offline voting can be performed by whatever means are common for the {iTC-shortname} at the time. The most common methods are an email ballot or a posted survey. These can also be combined (i.e. both could be used for the ballot). Results of the voting must be public within the {iTC-shortname} but individual votes do not need to be publicized outside, only the totals of the voting.
+
+The {iTC-shortname} has generally used a combination of Google Forms and email balloting for recording votes. This may be changed at any time based on the capabilities of the members running the vote.
 
 == Approval Process Note (At {iTC-ITname} launch)
 The {iTC-shortname} will follow the Technical Recommendation approval process for all updates. This may be changed later by the {iTC-shortname} through the normal approval process as defined in the ToR.
