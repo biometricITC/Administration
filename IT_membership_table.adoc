@@ -25,13 +25,13 @@
 |Brian Wood
 |Samsung
 |Vendor
-|6-1-2020
+|6-18-2020
 
 |Deputy Chair
-|
-|
-|Scheme
-|
+|Fiona Pattinson
+|Apple
+|Vendor
+|6-18-2020
 
 |Secretary
 |
@@ -40,16 +40,16 @@
 |
 
 |Member
-|
-|
-|Lab
-|
+|Naruki Kai
+|IPA
+|Scheme
+|6-18-2020
 
-|Non-Voting
-|
-|
-|
-|
+|Member
+|Greg Fiumara
+|NIST
+|Government (SME)
+|6-18-2020
 
 
 |====
