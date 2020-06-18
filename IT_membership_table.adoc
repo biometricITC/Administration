@@ -1,8 +1,8 @@
 = Biometrics Security Interpretation Team (BIT) Membership <DATE>
 :showtitle:
 :table-caption: Table
-:revnumber: 0.1
-:revdate: 2020-04-21
+:revnumber: 1.0
+:revdate: 2020-06-18
 
 :iTC-longname: Biometrics Security
 :iTC-shortname: BIO-iTC
@@ -22,16 +22,16 @@
 |Joined
 
 |Chair
-|Johann Sebastian Bach
-|Mr. Coffee
+|Brian Wood
+|Samsung
 |Vendor
-|1/1/2019
+|6-18-2020
 
 |Deputy Chair
-|
-|
-|Scheme
-|
+|Fiona Pattinson
+|Apple
+|Vendor
+|6-18-2020
 
 |Secretary
 |
@@ -40,16 +40,16 @@
 |
 
 |Member
-|
-|
-|Lab
-|
+|Naruki Kai
+|IPA
+|Scheme
+|6-18-2020
 
-|Non-Voting
-|
-|
-|
-|
+|Member
+|Greg Fiumara
+|NIST
+|Government (SME)
+|6-18-2020
 
 
 |====
