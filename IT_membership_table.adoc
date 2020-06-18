@@ -1,0 +1,55 @@
+= Biometrics Security Interpretation Team (BIT) Membership <DATE>
+:showtitle:
+:table-caption: Table
+:revnumber: 1.0
+:revdate: 2020-06-18
+
+:iTC-longname: Biometrics Security
+:iTC-shortname: BIO-iTC
+:iTC-email: isec-itc-bio-info@ipa.go.jp
+:iTC-website: https://biometricitc.github.io/
+:iTC-GitHub: https://github.com/biometricITC/cPP-biometrics
+:iTC-ITname: BIT
+
+== {iTC-ITname} Membership
+[cols=".^2,.^2,.^2,.^2,.^1",options="header"]
+|====
+
+|Position
+|Name
+|Organization
+|Type
+|Joined
+
+|Chair
+|Brian Wood
+|Samsung
+|Vendor
+|6-18-2020
+
+|Deputy Chair
+|Fiona Pattinson
+|Apple
+|Vendor
+|6-18-2020
+
+|Secretary
+|
+|
+|
+|
+
+|Member
+|Naruki Kai
+|IPA
+|Scheme
+|6-18-2020
+
+|Member
+|Greg Fiumara
+|NIST
+|Government (SME)
+|6-18-2020
+
+
+|====

@@ -1,2 +1,0 @@
-# Administration
-iTC administration Documentation

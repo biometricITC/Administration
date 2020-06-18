@@ -1,0 +1,10 @@
+= Biometrics Security iTC Admin Doc Repository
+
+image::https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg[link="code_of_conduct.adoc]
+
+== Introduction
+This is the administration document repository for the Biometrics Security iTC. 
+
+The documents here are about the governance of the iTC, not the cPP, PP-Module, Supporting Documents or other content produced by the iTC.
+
+Check out the main page for the iTC at https://biometricitc.github.io/.
