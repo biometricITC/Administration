@@ -1,8 +1,8 @@
 = Biometrics Security Interpretation Team (BIT) Membership <DATE>
 :showtitle:
 :table-caption: Table
-:revnumber: 0.1
-:revdate: 2020-05-14
+:revnumber: 1.0
+:revdate: 2020-06-18
 
 :iTC-longname: Biometrics Security
 :iTC-shortname: BIO-iTC
