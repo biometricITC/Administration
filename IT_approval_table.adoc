@@ -36,11 +36,15 @@ Approvals that occur through the GitHub approval process are automatically recor
 ^|{iTC-ITname}
 |This is a normal approval within GitHub (of a pull request). There are no rejections or blocks on the change.
 
+Due to how GitHub tracks approvals (the author of a Pull Request cannot approve it), the approval settings will be for 1 fewer approvals with the author being considered an implicit approval of the Pull Request. The {iTC-ITname} must track the author of the Pull Request. If it originates outside the {iTC-ITname}, this additional explicit approval is required in GitHub (even if merge is possible at the lower number).
+
 .2+|Technical Recommendation
 |GitHub
 |75%
 ^|{iTC-ITname}
 |The {iTC-ITname} must first approve a change with no rejections or blocks on the change. The approved change will then be submitted to the entire {iTC-shortname} for approval.
+
+Due to how GitHub tracks approvals (the author of a Pull Request cannot approve it), the approval settings will be for 1 fewer approvals with the author being considered an implicit approval of the Pull Request. The {iTC-ITname} must track the author of the Pull Request. If it originates outside the {iTC-ITname}, this additional explicit approval is required in GitHub (even if merge is possible at the lower number).
 
 |Offline (not GitHub)
 |66% with fewer than 25% negative
