@@ -1,4 +1,4 @@
-= Biometrics Security Interpretation Team (BIT) Membership <DATE>
+= Biometrics Security Interpretation Team (BIT) Membership June 18, 2020
 :showtitle:
 :table-caption: Table
 :revnumber: 1.0
