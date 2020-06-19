@@ -44,7 +44,7 @@ Due to how GitHub tracks approvals (the author of a Pull Request cannot approve 
 ^|{iTC-ITname}
 |The {iTC-ITname} must first approve a change with no rejections or blocks on the change. The approved change will then be submitted to the entire {iTC-shortname} for approval.
 
-Due to how GitHub tracks approvals (the author of a Pull Request cannot approve it), the approval settings will be for 1 fewer approvals with the author being considered an implicit approval of the Pull Request. The {iTC-ITname} must track the author of the Pull Request. If it originates outside the {iTC-ITname}, this additional explicit approval is required in GitHub (even if merge is possible at the lower number).
+Due to how GitHub tracks approvals (the author of a Pull Request cannot approve it), the approval settings will be for 1 fewer approvals with the author being considered an implicit approval of the Pull Request. The {iTC-ITname} must track the author of the Pull Request. If the Pull Request originates outside the {iTC-ITname}, this additional explicit approval is required in GitHub (even if merge is possible at the lower number).
 
 |Offline (not GitHub)
 |66% with fewer than 25% negative
