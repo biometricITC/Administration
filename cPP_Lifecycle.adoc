@@ -78,7 +78,7 @@ The {itc-shortname} may approve errata updates on a periodic basis to officially
 == Revision Transitions
 When a new revision is published, it is immediately available for use. So if version 1.1 is released, it can be immediately used for an evaluation. To ensure a common direction and basis for evaluation within the community, the release of a new cPP revision means that the previous revisions must be retired from active use.
 
-The transition period is a time of overlap when multiple revisions of the cPP may be used for an active evaluation. The transition periods are determined by the type of revision being published. At the end of the transition period, the previous revision will be sunset, or retire and no longer be considered acceptable for new evaluations (evaluations already in process may still be completed).
+The transition period is a time of overlap when multiple revisions of the cPP may be used for an active evaluation. The transition periods are determined by the type of revision being published. At the end of the transition period, the previous revision will be retired and no longer be considered acceptable for new evaluations. Evaluations already in process may still be completed after the transition period for a revision has concluded.
 
 The following table specifies when the previous revision will be sunset/retired and the new revision takes precedence.
 
