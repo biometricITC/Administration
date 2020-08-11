@@ -127,7 +127,7 @@ The practical implication of this transition period is that there should only be
 *-------------------*--------*-----*--------*------------------->
 v1.0                v1.1           v2.0                Release
 
-                             v1.0           v1.1       Sunset
+                             v1.0           v1.1       Retire
 ....
 
 === Technical Decision Transitions
