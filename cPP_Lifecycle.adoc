@@ -46,7 +46,7 @@ There are three classes of revisions to a cPP that can be produced. The descript
 
 |Technical Decision or Errata
 |x.y.**ZZ**
-|Application of Technical Decisions to the cPP (no other changes)
+|Application of Technical Decisions to the cPP with no other changes
 
 |===
 
