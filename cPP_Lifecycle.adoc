@@ -22,7 +22,7 @@ The purpose of this document is to specify the lifecycle for cPP versions, provi
 
 [NOTE]
 ====
-While the document talks about cPP revisions, this covers the cPP, SD and any other related documents.
+While the document talks about cPP revisions, this covers the cPP, SD, and any other related documents.
 ====
 
 == Revision Classes
