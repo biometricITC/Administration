@@ -38,7 +38,7 @@ There are three classes of revisions to a cPP that can be produced. The descript
 
 |Major
 |**X**.y.zz
-|Full update to the cPP, including requirements changes (addition or removal of requirements)
+|Full update to the cPP, including requirements changes (i.e., addition or removal of requirements)
 
 |Minor
 |x.**Y**.zz
