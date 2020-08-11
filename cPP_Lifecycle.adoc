@@ -18,7 +18,7 @@
 == Introduction
 As part of the normal work of the {iTC-shortname}, new iterations of the cPP and SD will be released over time. Ideally, when a new version of the cPP is released, everyone would immediately follow the new version, but this is not possible as it takes time to transition to updated requirements.
 
-The purpose of this document is to specify the lifecycle for the cPP versions, providing guidance on when a new version will supersede earlier versions (when the previous version is no longer considered acceptable for use) and how this will be announced to the wider community.
+The purpose of this document is to specify the lifecycle for cPP versions, providing guidance on when a new version will supersede earlier versions (when the previous version is no longer considered acceptable for use) and how this will be announced to the wider community.
 
 [NOTE]
 ====
