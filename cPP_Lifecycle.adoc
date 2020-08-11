@@ -63,7 +63,7 @@ The {itc-shortname} maintains 3 primary branches for the creation of the cPP and
 
 |Master/Main
 |**X**.**Y**
-|This is always maintained at the last Major.Minor release and is the "official" published version.
+|This is always maintained at the latest Major.Minor release and is the "official" published version.
 
 |Interpretation
 |x.y.**ZZ**
