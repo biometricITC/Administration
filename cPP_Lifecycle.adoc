@@ -80,7 +80,7 @@ When a new revision is published, it is immediately available for use. So if ver
 
 The transition period is a time of overlap when multiple revisions of the cPP may be used for an active evaluation. The transition periods are determined by the type of revision being published. At the end of the transition period, the previous revision will be retired and no longer be considered acceptable for new evaluations. Evaluations already in process may still be completed after the transition period for a revision has concluded.
 
-The following table specifies when the previous revision will be sunset/retired and the new revision takes precedence.
+The following table specifies when the previous revision will be retired and the new revision takes precedence.
 
 .Transition Periods 
 [cols=".^1,.^1",options="header"]
