@@ -51,7 +51,7 @@ There are three classes of revisions to a cPP that can be produced. The descript
 |===
 
 === Revisions & Branches
-The {itc-shortname} maintains 3 primary branches for the creation of the cPP and all supporting documents. Of these branches, two will be used to maintain the current versions of the documents while the third is used for active work on new updates.
+The {itc-shortname} maintains 3 primary branches for the creation of the cPP and all supporting documents. Of these branches, those shown in <<Branches & the Latest Documents>> will be used to maintain the current versions of the documents. The third branch and any additional branches are used for active work on new updates, but are not considered published.
 
 .Branches & the Latest Documents
 [cols=".^1,.^1,.^4",options="header"]
