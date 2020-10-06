@@ -1,11 +1,11 @@
-= cPP Lifecycle for the Biometrics Security iTC
+= Biometric Product Essential Security Requirements
 :showtitle:
 :toc:
 :toclevels: 3
 :table-caption: Table
 :imagesdir: images
-:revnumber: 0.1
-:revdate: 2020-08-11
+:revnumber: 2.0
+:revdate: November 20, 2019
 :xrefstyle: full
 
 :iTC-longname: Biometrics Security
@@ -15,120 +15,125 @@
 :iTC-GitHub: https://github.com/biometricITC/cPP-biometrics
 :iTC-ITname: BIT
 
-== Introduction
-As part of the normal work of the {iTC-shortname}, new iterations of the cPP and SD will be released over time. Ideally, when a new version of the cPP is released, everyone would immediately follow the new version, but this is not possible as it takes time to transition to updated requirements.
-
-The purpose of this document is to specify the lifecycle for cPP versions, providing guidance on when a new version will supersede earlier versions (when the previous version is no longer considered acceptable for use) and how this will be announced to the wider community.
-
-[NOTE]
-====
-While the document talks about cPP revisions, this covers the cPP, SD, and any other related documents.
-====
-
-== Revision Classes
-There are three classes of revisions to a cPP that can be produced. The descriptions are not meant to be exhaustive, but to represent the level of changes in the document.
-
-.Revision Classes for a cPP
-[cols=".^1,.^1,.^4",options="header"]
+[cols=".^1,.^1"]
 |===
 
-|Revision Class
-|Version Position
-|Description
+|Title
+|Biometric Product Essential Security Requirements
 
-|Major
-|**X**.y.zz
-|Full update to the cPP, including requirements changes (i.e., addition or removal of requirements)
+|Maintained by
+|Biometrics Security iTC
 
-|Minor
-|x.**Y**.zz
-|Update to the cPP, likely updating existing requirements, but not changing them (i.e., not adding or removing requirements)
+|Version
+|{revnumber}
 
-|Technical Decision or Errata
-|x.y.**ZZ**
-|Application of Technical Decisions to the cPP with no other changes
+|Date of Issue
+|{revdate}
+
+|Supersedes
+|1.0
 
 |===
 
-=== Revisions & Branches
-The {itc-shortname} maintains 3 primary branches for the creation of the cPP and all supporting documents. Of these branches, those shown in <<Branches & the Latest Documents>> will be used to maintain the current versions of the documents. The third branch and any additional branches are used for active work on new updates, but are not considered published.
+== Status
+The CCDB Working Group has been requested to develop an Essential Security Requirements (ESR) for biometrics product. The ESR Version 1.0 contained material that was provided by the initiator, IPA (Japan), for a cPP and reviewed by Working Group members (AISEP (Australia), CCN (Spain) and TSE (Turkey)) and initial Biometric Security iTC members (AIST (Japan), Apple (United States), Epoche & Espri and Applus Laboratories (Spain), Safran Identity & Security (France), TUViT (Germany)) then endorsed by the CCDB in year 2016. The ESR Version 1.0 was updated to this document, the ESR Version 2.0 by the Biometrics Security iTC to adapt to change of requirements introduced during development of the cPP and will be submitted to the CCDB Work Group for Biometric Product Security for approval.
 
-.Branches & the Latest Documents
-[cols=".^1,.^1,.^4",options="header"]
-|===
+Security requirements in this ESR don't depend on biometric characteristics (e.g. fingerprint, face and vein). Therefore the cPP that is to be developed based on this ESR does not depend on biometric characteristics either. The evaluation methodology is defined and described in the supporting document that provides evaluation guidance in common for all biometric characteristics. The supporting document also provide specific evaluation guidance for major biometric characteristics (face, eye, fingerprint and finger/palm vein).
 
-|Branch
-|Versions
-|Description
+It is acknowledged that various PPs for biometric technology are already existing by the time that this document is developed, see [BSI-CC-PP-0043-2008], [BSI-CC-PP-0062-2009], [BSI-PP-0063-2009], [AIST-PP-BVPPP-2016]. However, the authors of this document agree that the development of a cPP for biometrics shall solely start on the basis of this Essential Security Requirements Document and under consideration of the following objectives:
 
-|Master/Main
-|**X**.**Y**
-|This is always maintained at the latest Major.Minor release and is the "official" published version.
+* The current state of the technology in biometrics in all interested countries shall be considered,
+* The developed cPP shall be independent of a concrete biometric characteristic,
+* The developed cPP shall be as modular as possible in order to cover all potential application cases.
 
-|Interpretation
-|x.y.**ZZ**
-|This branch will be updated for each TD that is published and is a rolling update for all approved TDs between Major.Minor updates.
+Accompanying supporting document provides specific guidance for each biometric characteristic. Currently supporting document covers only major biometric characteristics (face, eye, fingerprint and finger/palm vein). CCRA certificates that claim conformance to the cPP shall be issued only for biometric characteristics that CCRA endorsed supporting document covers.
 
-This branch can be used in place of Major.Minor + TDs if the validating scheme approves all TDs.
+=== References
+* [BSI-CC-PP-0043-2008] BSI, Biometric Verification Mechanisms Protection Profile, Version 1.3, 2008
+* [BSI-CC-PP-0062-2009] BSI, Fingerprint Spoof Detection Protection Profile based on Organisational Security Policies (FSDPP_OSP), Version 1.7, 2009
+* [BSI-PP-0063-2009] BSI, Fingerprint Spoof Detection Protection Profile (FSDPP), Version 1.8, 2009
+* [AIST-PP-BVPPP-2016] AIST, Protection Profile for Biometric Verification Products, Version 1.2, 2016
 
-|===
+== Background and Purpose
+From ISO/IEC 2382-37 Information technology — Vocabulary — Part 37: Biometrics (cf. http://standards.iso.org/ittf/PubliclyAvailableStandards/c055194_ISOIEC_2382-37_2012.zip), we have the following definitions.
 
-The {itc-shortname} may approve errata updates on a periodic basis to officially roll TDs into a published release depending on the number of TDs and the time before the next full update.
+Biometric recognition, biometrics -- _automated recognition of individuals based on their biological and behavioural characteristics_
 
-== Revision Transitions
-When a new revision is published, it is immediately available for use. So if version 1.1 is released, it can be immediately used for an evaluation. To ensure a common direction and basis for evaluation within the community, the release of a new cPP revision means that the previous revisions must be retired from active use.
+Biometric System -- _system for the purpose of the biometric recognition of individuals based on their behavioural and biological characteristics_
 
-The transition period is a time of overlap when multiple revisions of the cPP may be used for an active evaluation. The transition periods are determined by the type of revision being published. At the end of the transition period, the previous revision will be retired and no longer be considered acceptable for new evaluations. Evaluations already in process may still be completed after the transition period for a revision has concluded.
+This document describes the high-level set of security requirements that a biometric product shall satisfy when evaluated against the cPP written for such technology.
 
-The following table specifies when the previous revision will be retired and the new revision takes precedence.
+The biometric product enrols and/or verifies a user using his/her biometric characteristic. Each process is described in the following paragraphs. A biometric product may implement only one of those functionalities.
 
-.Transition Periods 
-[cols=".^1,.^1",options="header"]
-|===
+=== Enrolment
+During the enrolment process the biometric product captures the biometric raw data of a user and extracts the biometric feature it is working with. The biometric feature is then combined with the identity of the user and stored as a biometric template in a database.
 
-|Revision Class
-|Transition Period
+=== Biometric verification
+During the verification process the user provides his/her identity and biometric characteristic to the biometric product. The biometric product retrieves the biometric template associated with the identity from the database, compares it with the biometric feature extracted from the captured biometric characteristic of the user to generate the similarity between the two data, and determines whether user is accepted or rejected based on the similarity.
 
-|Major
-.2+|6 months after the new revision is published
+Examples of modalities used by biometric recognition systems are: fingerprint, face, iris, palm print, finger vein, palm vein, speech, signature and so forth. The following figure, inspired from ISO/IEC JTC1 SC37 standards, is a generic representation of a biometric system (other configurations exist). This illustrates the different sub-functionalities on which the biometric enrollment and the biometric verification processes rely on.
 
-|Minor
+.Biometrics System Example
+image::biosystemexample.PNG[width=80%,align="center"]
 
+When used in a security system, the biometric product needs to take into account the risk of subverting the biometric functionalities. One of the main entry points for an attacker is the biometric capture subsystem where they could present artificial or abnormal biometric traits at the point of presentation and collection of the relevant biometric characteristics, in order to interfere with system policy. As defined in [30107-1], this corresponds to a presentation attack, the “presentation to the biometric data capture subsystem with the goal of interfering with the operation of the biometric system”. It can be realized by presenting an artefact or human characteristic which are called presentation attack instruments. Presentation Attack Detection (PAD) refers to the automatic determination of a presentation attack. The PAD subsystem plays an important role in the security of biometric systems, especially when unsupervised.
 
-|Technical Decision
-|Immediate
+[30107-1] ISO/IEC 30107-1:2016. Information technology -- Biometric presentation attack detection -- Part 1: Framework
 
-|===
+== Use Case(s)
+Biometric products are used for user authentication for mobile devices such as smartphones, PC login at offices, ATMs at banks, and building or room entrance control, or border security checks.
 
-[IMPORTANT]
-====
-While the iTC may specify these time periods for the transitions between versions, a scheme may decide on different periods/dates for the transition between versions. The iTC may be able to influence the acceptance of the transition times, but it is a scheme decision.
-====
+The first version of the cPP focuses on a use case that the biometric product is used for unlocking the mobile device. The separate cPP has to be created for other use cases. 
+The configuration of the biometric products is categorized into the following two types: 
 
-=== Major & Minor Transitions
-The practical implication of this transition period is that there should only be a 6 month overlap with multiple versions being available for use. The following diagram illustrates the time periods, showing the months from the initial release of v1.0 through to v2.0.
+* Integrated Type: The components of the biometric products are not physically separated, i.e., the components are not connected by USB cables or network.
+* Separated Type: The components of the biometric products are physically separated, i.e., the components are connected by USB cables or network.
 
-[#transitions]
-[ditaa,transition,png]
-....
-/----------------------------\
-|  cPP v1.0     cRED         |
-\----------------------------/
+== Resources to be protected
+* _Any asset that enrolled users can access after successful biometric verification_
+* _Biometric features, templates and security related parameters, such as the threshold value, that are used and referenced for biometric verification_
+* _Log data that is produced by the biometric system (if generated by the biometric system)_
 
-                    /-----------------------\
-                    |  cPP v1.1   cBLU      |
-                    \-----------------------/
+== Attacker access
+* _An attacker can present some biometric characteristics and try to be incorrectly verified as a genuine user._
+* _(An attacker may present any kind of presentation attack instruments during enrolment and biometric verification for the sake of impersonation.)_
+* _(An attacker may steal biometric features of a genuine user and make any kind of presentation attack instruments based on the biometric features.)_
 
-                                   /----------------------------\
-                                   |  cPP v2.0    cGRE          |
-                                   \----------------------------/
+_Normal Italicized text indicates attacker access related to Essential Security Requirements and (Italicized text within square parenthesis) indicate ones related to Optional Extensions._
 
-0                   12       18    22       28         Months
-*-------------------*--------*-----*--------*------------------->
-v1.0                v1.1           v2.0                Release
+== Attacker Resources
+* _Any resources allowed to be used by the basic attack potential to examine and attack the biometric product_
+* _Commercially and/or publicly available software/knowledge/equipment, and, if it is commercially available, samples of the biometric product to test and attack_
 
-                             v1.0           v1.1       Retire
-....
+== Boundary of Device
+* _The hardware, firmware, software and security functionalities of the biometric product define the boundary_
+* _All of the security functionalities are contained and executed within the boundary of the biometric product_
 
-=== Technical Decision Transitions
-By their nature, Technical Decisions are meant to take effect immediately. The one caveat to this is for evaluations where the checkout report has already been submitted to the scheme, at which point the Technical Decisions are not required to be added to the Security Target.
+_Examples of typical boundary (inside the blue frame) of biometric products (figures are inspired from [30107-1]):_
+
+.Case of a typical fully integrated biometric product
+image::integratedbioproduct.PNG[width=80%,align="center"]
+
+.Case of a typical software only product
+image::swonlybioproduct.png[width=80%,align="center"]
+
+.Case of a typical presentation attack detection sensor-based product
+image::PADsensorproduct.png[width=80%,align="center"]
+
+== Essential Security Requirements
+* _The biometric product shall enrol users and create templates of sufficient quality_
+* _The biometric product shall use users’ samples of sufficient quality and verify users less than claimed error rates (i.e. FAR and FRR)_
+* _The biometric product shall protect biometric data cooperated with its operating environment_
+
+== Assumptions
+* _User configures the biometric product and its environment correctly in a manner to ensure that the security policies will be enforced_
+* _The environment provides an alternative authentication mechanism as a complement to biometric verification_
+* _The biometric product is assumed to be used in a controlled and observable environment (i.e. presentation attack can be considered non practical, however, presentation attack can be addressed by optional extension if needed)_
+
+== Optional Extensions
+Requirements captured in this section may already be realized in some products in this technology class, but this ESR is not mandating these capabilities exist in “baseline” level products.
+
+* _The biometric product shall prevent enrolment nor verification from being successful when presentation attack instruments are used_
+
+== Outside the Scope of Evaluation
+* _Biometric identification_
