@@ -74,7 +74,7 @@ During the verification process the user provides his/her identity and biometric
 Examples of modalities used by biometric recognition systems are: fingerprint, face, iris, palm print, finger vein, palm vein, speech, signature and so forth. The following figure, inspired from ISO/IEC JTC1 SC37 standards, is a generic representation of a biometric system (other configurations exist). This illustrates the different sub-functionalities on which the biometric enrollment and the biometric verification processes rely on.
 
 .Biometrics System Example
-image::biosystemexample.PNG[width=80%,align="center"]
+image::biosystemexample.png[width=80%,align="center"]
 
 When used in a security system, the biometric product needs to take into account the risk of subverting the biometric functionalities. One of the main entry points for an attacker is the biometric capture subsystem where they could present artificial or abnormal biometric traits at the point of presentation and collection of the relevant biometric characteristics, in order to interfere with system policy. As defined in [30107-1], this corresponds to a presentation attack, the “presentation to the biometric data capture subsystem with the goal of interfering with the operation of the biometric system”. It can be realized by presenting an artefact or human characteristic which are called presentation attack instruments. Presentation Attack Detection (PAD) refers to the automatic determination of a presentation attack. The PAD subsystem plays an important role in the security of biometric systems, especially when unsupervised.
 
