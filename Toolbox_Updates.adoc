@@ -1,0 +1,51 @@
+= Biometrics Security Submitting Toolbox Updates
+:showtitle:
+:table-caption: Table
+:revnumber: 0.1
+:revdate: 2020-12-09
+
+:iTC-longname: Biometrics Security
+:iTC-shortname: BIO-iTC
+:iTC-email: isec-itc-bio-info@ipa.go.jp
+:iTC-website: https://biometricitc.github.io/
+:iTC-GitHub: https://github.com/biometricITC/cPP-biometrics
+:iTC-ITname: BIT
+
+== Introduction
+The {itc-shortname} does not intend the PAD toolboxes to be static, and should be updated regularly. This can include new techniques for an existing modality or a completely new modality that has entered the market and has need of validation. This document is intended to provide guidance on how requests for updates should be made to the {itc-shortname}.
+
+This is not intended to provide guidance on questions about the existing toolboxes, such as interpretations or other issues with the requirements which would be handled through the normal Interpretation process. Create a new issue by selecting {iTC-GitHub}/issues/new/choose[Request for Interpretation] for questions of this type.
+
+== Types of Update Requests
+There are three categories of update requests as defined by the table.
+
+[cols=".^1,.^2,.^2",options="header"]
+|====
+
+|Category
+|Description
+|Expected Information
+
+|Question/Issue with existing Toolbox
+|Questions, need for interpretation on existing toolboxes
+|Complete {iTC-GitHub}/issues/new/choose[Request for Interpretation] issue submission and follow the standard interpretation process.
+
+|New test procedures to existing Toolbox
+|Updates to an existing toolbox, such as adding a new test method, for exmaple, adding a new set of materials and related attacks for the fingerprint toolbox.
+|A {iTC-GitHub}/issues/new/choose[Request for Interpretation] and create new issues and pull requests in the appropriate toolbox to add the new information. The submission should be as complete as possible.
+
+The review would follow the standard interpretation process.
+
+|Toolbox for new modality
+|A completely new toolbox for a new modality
+a|A {iTC-GitHub}/issues/new/choose[Request for Interpretation] to start the process. After agreement by the {itc-shortname} to add the modality, a toolbox containing the following (at a minimum):
+
+* Modality Overview
+* Modality Inventory
+* Modality References
+* Modality Verification List
+* Attacks (including attack potential calculations)
+
+Once started, the process for adding the modality will follow the standard update/review cycle.
+
+|===
