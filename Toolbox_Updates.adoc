@@ -2,7 +2,7 @@
 :showtitle:
 :table-caption: Table
 :revnumber: 0.1
-:revdate: 2020-12-09
+:revdate: 2020-12-17
 
 :iTC-longname: Biometrics Security
 :iTC-shortname: BIO-iTC
@@ -19,26 +19,29 @@ This is not intended to provide guidance on questions about the existing toolbox
 == Types of Update Requests
 There are three categories of update requests as defined by the table.
 
-[cols=".^1,.^2,.^2",options="header"]
+[cols=".^1,.^2,.^2,.^1",options="header"]
 |====
 
 |Category
 |Description
 |Expected Information
+|Rough Timeline
 
 |Question/Issue with existing Toolbox
 |Questions, need for interpretation on existing toolboxes
 |Complete {iTC-GitHub}/issues/new/choose[Request for Interpretation] issue submission and follow the standard interpretation process.
+|4 to 6 Weeks
 
 |New test procedures to existing Toolbox
-|Updates to an existing toolbox, such as adding a new test method, for exmaple, adding a new set of materials and related attacks for the fingerprint toolbox.
+|Updates to an existing toolbox, such as adding a new test method, for example, adding a new set of materials and related attacks for the fingerprint toolbox.
 |A {iTC-GitHub}/issues/new/choose[Request for Interpretation] and create new issues and pull requests in the appropriate toolbox to add the new information. The submission should be as complete as possible.
 
 The review would follow the standard interpretation process.
+|3 to 5 months
 
 |Toolbox for new modality
 |A completely new toolbox for a new modality
-a|A {iTC-GitHub}/issues/new/choose[Request for Interpretation] to start the process. After agreement by the {itc-shortname} to add the modality, a toolbox containing the following (at a minimum):
+a|A https://github.com/biometricITC/cPP-toolboxes/issues/new/choose[New Modality request] to start the process. After agreement by the {itc-shortname} to add the modality, a toolbox containing the following (at a minimum):
 
 * Modality Overview
 * Modality Inventory
@@ -47,5 +50,6 @@ a|A {iTC-GitHub}/issues/new/choose[Request for Interpretation] to start the proc
 * Attacks (including attack potential calculations)
 
 Once started, the process for adding the modality will follow the standard update/review cycle.
+|6 to 10 months
 
 |===
