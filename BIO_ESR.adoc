@@ -5,7 +5,7 @@
 :table-caption: Table
 :imagesdir: images
 :revnumber: 0.1
-:revdate: October 28, 2020
+:revdate: January 14, 2021
 :xrefstyle: full
 
 :iTC-longname: Biometrics Security
@@ -66,11 +66,11 @@ This section will be updated later
 ====
 This section needs to be edited
 ====
-From ISO/IEC 2382-37 Information technology — Vocabulary — Part 37: Biometrics (cf. http://standards.iso.org/ittf/PubliclyAvailableStandards/c055194_ISOIEC_2382-37_2012.zip), we have the following definitions.
+From ISO/IEC 2382-37 Information technology — Vocabulary — Part 37: Biometrics (cf. https://www.iso.org/standard/66693.html), we have the following definitions.
 
-Biometric recognition, biometrics -- _automated recognition of individuals based on their biological and behavioural characteristics_
+Biometric recognition, biometrics:: _automated recognition of individuals based on their biological and behavioural characteristics_
 
-Biometric System -- _system for the purpose of the biometric recognition of individuals based on their behavioural and biological characteristics_
+Biometric System:: _system for the purpose of the biometric recognition of individuals based on their behavioural and biological characteristics_
 
 This document describes the high-level set of security requirements that a biometric product shall satisfy when evaluated against the cPP written for such technology.
 
@@ -101,7 +101,7 @@ CMFA products are used primarily for user authentication for mobile devices such
 The first version of the PP-Module focuses on the use case that the CMFA product is used for unlocking the mobile device. Additional PP-Modules have to be created for other use cases. 
 
 == Resources to be protected
-* _Any asset that enrolled users can access after successful CMFA verification_
+* _Any asset that enrolled users can access after successful verification_
 * _CMFA features, configuration data, templates and security related parameters, such as the threshold values, that are used and referenced for CMFA verification_
 
 == Attacker access
@@ -130,19 +130,20 @@ _An example of a CMFA boundary within the overall context of the inputs used for
 .Example CMFA Boundary
 image::toe-boundary.png[width=80%,align="center"]
 
-* The purple boundary is the CMFA TOE, including the CMFA Engine, the CMFA PAD and the Admin interface
+* The purple boundary is the CMFA TOE, including the CMFA Engine, the CMFA Signal Verification and the Admin interface
 ** CMFA Engine is the core of system, determining the authentication outcomes
-** CMFA PAD is used to ensure trust of the incoming sensor/connection input (Yellow boxes)
+** CMFA Signal Verification is used to ensure trust of the incoming sensor/connection input (Yellow boxes)
 ** Admin is the component that received configuration data from the external management service (such as an EMM)
-* The orange Biometric Sensors & PAD are for any dedicated biometric sensors (such as face, fingerprint or vein) that are used for input
+* The orange Biometric Sensors & PAD are for any dedicated biometric sensors (such as face, fingerprint or vein) that are used for input that meets (or has been validated to) the requirements of the Biometrics PP-Module. A biometrics sensor that does not could be considered a yellow sensor.
 * The yellow sensors/connection input can cover any type of input that may be used. For example the type of Wi-Fi connection, location data, time or wearable device connectivity. 
 
-Dashed lines show where there may be an alternative path for an input (in this case through the CMFA PAD instead of directly to the CMFA Engine). This would be determined by the vendor, and is to show that different inputs may have different expectations of trust, even within an input category.
+The different color lines are used to show an example of paths and the level of trust that is associated with the input.
 
-[NOTE]
-====
-Haven't edited here on
-====
+* Black lines show "internal" communications between components
+* Green lines show highly trusted input (trust established both by the source and the path to the TOE) that can be trusted fully without additional checks (and hence is input directly to the CMFA Engine)
+* Red lines show less trusted input that must be checked before being used
+* Yellow, dashed lines show potential alternative paths for sources (generally for sources that may be normally considered highly trusted but which may want to be separately verified anyway)
+
 == Essential Security Requirements
 * _The CMFA product shall enrol users and create templates of sufficient quality_
 * _The CMFA product shall use inputs of sufficient quality and verify users less than claimed error rates (i.e. FAR and FRR)_
