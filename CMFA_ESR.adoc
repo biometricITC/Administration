@@ -148,6 +148,7 @@ The different color lines are used to show an example of paths and the level of 
 * _The CMFA product shall enrol users and create templates of sufficient quality_
 * _The CMFA product shall use inputs of sufficient quality and verify users less than claimed error rates (i.e. FAR and FRR)_
 * _The CMFA product shall protect CMFA data in cooperation with its operating environment_
+* _The CMFA product shall provide a defined value or configuration for the meaning of Continuous (i.e. a frequency of the verification)_
 
 == Assumptions
 * _Admin configures the CMFA product and its environment correctly in a manner to ensure that the security policies will be enforced_
