@@ -98,7 +98,7 @@ When used in a security system, the biometric product needs to take into account
 == Use Case(s)
 CMFA products are used primarily for user authentication for mobile devices such as smartphones, where the authentication can be used to unlock the mobile device. This status can also be provided to external services such as a PC login at the office, building or room entrance control or ATMs.
 
-The first version of the PP-Module focuses on the use case that the CMFA product is used for unlocking (and maintaining the appropriately unlocked state of) the mobile device. Additional PP-Modules have to be created for other use cases. 
+The first version of the PP-Module focuses on the use case that the CMFA product is used for unlocking and maintaining the appropriately unlocked state of the mobile device. Additional PP-Modules have to be created for other use cases. 
 
 == Resources to be protected
 * _Any asset that enroled users can access after successful verification_
