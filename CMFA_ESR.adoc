@@ -106,9 +106,9 @@ Any data used to determine the trust score including CMFA configuration data.
 == Attacker access
 An attacker can steal the computer device in the unlocked state however an attacker needs to take some actions (e.g. take the device out of office that GPS can detect) before accessing CMFA data, user data or service stored in the computer device. If the CMFA uses biometric sensors or learns behavior patterns of a user, biometric enrollment and learning shall be done by a legitimate user in the protected environment (i.e. An attacker can't attack the CMFA during biometric enrolment and learning user behavior)  
 
-[If biometric sensor is used for CMFA, an attacker may present any kind of presentation attack instruments during verification for the sake of impersonation.]
+* [If biometric sensor is used for CMFA, an attacker may present any kind of presentation attack instruments during verification for the sake of impersonation.]
 
-[If biometric sensor is used for CMFA, an attacker may try to spoof sensor/connection input during verification for the sake of impersonation.]
+* [If biometric sensor is used for CMFA, an attacker may try to spoof sensor/connection input during verification for the sake of impersonation.]
 
 Normal text indicates attacker access related to Essential Security Requirements and (Normal text within square parenthesis) indicate ones related to Optional Extensions.
 
