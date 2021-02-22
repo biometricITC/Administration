@@ -89,7 +89,7 @@ image::toe-boundary.png[width=80%,align="center"]
 ** CMFA Signal Verification is used to establish the trust level of the incoming sensor/connection input (Yellow boxes)
 ** Admin is the component that receives configuration data from the external management service (such as an EMM)
 * The orange Biometric Sensors & PAD are for any dedicated biometric sensors (such as face, fingerprint or vein) that are used for the conventional authentication (or has been validated to) the requirements of [BIOPP-Module]. CMFA Engine will set the confidence rating to the highest value when biometric verification using one of these dedicated biometric sensors succeeds. Biometric sensors (e.g. microphone for voice) that are not the dedicated biometric ones may also be used to maintain or increase the confidence rating.
-* The yellow sensors/connection input can cover any type of input that may be used. For example, the type of Wi-Fi connection, location data, time or wearable device connectivity.
+* The yellow sensors/connection input can cover any type of input that may be used. For example, the type of Wi-Fi connection, location data, time or wearable device connectivity. They can also include non-certified biometrics that may also be used for input.
 The different color lines are used to show an example of paths and the level of trust that is associated with the input.
 
 * Black lines show "internal" communications between components
@@ -172,23 +172,10 @@ There is no standard to measure CMFA performance because there are many combinat
 
 NOTE: sensitive personal information shall be protected securely and shall not be transmitted to the entity outside of the secure execution environment without explicit user permission (because it breaks the personal information protection law like GDPR)
 
-*If biometric sensors are selected for CMFA input, CMFA shall use inputs of sufficient quality and verify users less than the claimed error rates (i.e. FAR and FRR) for the biometic sensors*
-
-NOTE: BIO-PP Module and SD can be reused for this requirement 
+*If biometric sensors are specified for trusted CMFA input, the specified biometric must verify users less than the claimed error rates (i.e. FAR and FRR) for the biometic sensors*
 
 == Assumptions
 *A computer conforms to the relevant PP and is assumed to be configured in a secure manner*
-
-*A dedicated biometric sensor conforms to the relevant PP and assumed to be secure*
-
-[NOTE]
-====
-CMFA depends on two components to operate as specified, a computer and dedicated biometric sensors used for conventional authentication. This ESR assumes that both components conform the relevant PPs.
-
-A computer is responsible for locking device based on the confidence rating, protecting the data during the locked stat and maintain the secure execution environment for CMFA. Those security requirements are defined in the relevant PP such as [MDFPP].
-
-Dedicated biometric sensors is responsible for verifying a user and protect user’s biometric information. Those security requirements are defined in the relevant PP such as [BIOPP-Module].
-====
 
 *Admin or user configures the CMFA and its operating environment correctly in a manner to ensure that the security policies will be enforced*
 
