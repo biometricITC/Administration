@@ -140,6 +140,8 @@ NOTE: Explicit user permission is required if CMFA monitors detailed user behavi
 
 *CMFA shall configure an adequate set of sensors for continuous authentication.*
 
+*CMFA shall define the trust (reliability) of all input sensors.*
+
 *CMFA shall continuously determine the current level of confidence in the authentication of a user based on inputs from sensors and configuration data.*
 
 [NOTE]
