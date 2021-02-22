@@ -53,13 +53,6 @@ This section will be updated later
 Computer::
 	A self-contained device which is composed of a hardware platform and its system software (operating system and applications). The device is typically some sort of general purpose computing platform, such as a laptop, tablet or smartphone that is designed to be portable (though this is not required).
 
-Confidence rating::
-	The resulting output from the CMFA Engine based on the provided inputs that is used to determine the authentication status of the user.
-
-Input trust (Trusted input)::
-	The level of reliability in sensor input. For example, how easy (or difficult) it may be to attack the sensor and send unreliable data to the CMFA product.
-	- The term "trusted sensors" may be used to mark sensors with a high level of reliability
-
 == Background and Purpose
 
 This document describes the high-level fundamental security requirements expected of any computers that implement CMFA. It is intended to provide a minimal, baseline set of requirements which can be built upon by the future PP-Module to provide an overall set of security solutions for CMFA running on a computer.
@@ -70,14 +63,12 @@ Most computers implement user authentication functionality. This type of authent
 Conventional authentication suffers from several shortcomings such as the inconvenience of frequent unlocking and several adversarial attacks (e.g., shoulder surfing and smudge attacks for password authentication). Conventional authentication is at a point in time, so once the user has authenticated successfully, there is no way to know if the device is still under the control of the authenticating user. CMFA extends the conventional authentication and delivers continuous and transparent authentication to reduce such shortcomings.
 
 === CMFA
-CMFA determines the current level of authentication of a user, the confidence rating, by expanding on conventional authentication using inputs received through sensors or components attached to a computer. This confidence rating achieves the highest value right after the conventional authentication succeeds and begins to decline as time progresses as the value of the conventional authentication event decreases. However, CMFA can increase the confidence rating, for example, if CMFA recognizes user’s voice from a microphone, or maintain the confidence rating, for example, if CMFA recognizes that the device is in a known place (e.g. office) and connected to the defined (trusted) Wi-Fi network. CMFA can also decrease the confidence rating, for example, if CMFA detects rapid changes to location, such as appearing in a new location immediately.
+CMFA determines the current level of authentication of a user, the trust score, by expanding on conventional authentication using inputs received through sensors or components attached to a computer. This trust score achieves the highest value right after the conventional authentication succeeds and begins to decline as time progresses as the value of the conventional authentication event decreases. However, CMFA can increase the trust score, for example, if CMFA recognizes user’s voice from a microphone, or maintain the trust score, for example, if CMFA recognizes that the device is in a known place (e.g. office) and connected to the defined (trusted) Wi-Fi network. CMFA can also learn or analyze behavior patterns of a user and decrease the score if unusual behavior is detected (e.g. the reported location suddenly changes to a non-adjacent place). 
 
-To properly determine a confidence rating, CMFA must be configured with an adequate set of sensor inputs. The set of sensor inputs must, in combination, be able to provide protection against attacks that meet the level of Basic Attack Potential.
-
-The confidence rating is continuously maintained and updated by CMFA and where it can be used by the device to determine whether to remain in the unlocked state or transit to the locked state based on the rating. The confidence rating can also be provided to external program or service for more granular access control. 
+The trust score is continuously maintained and updated by CMFA and where it can be used by the device to determine whether to remain in the unlocked state or transit to the locked state based on the score. The trust score can also be provided to external program or service for more granular access control. 
 
 ==== CMFA boundary
-CMFA, the TOE, is composed of the firmware (where applicable) and software attached to or running on the computer. CMFA determines the confidence rating and provides it to the computer (or external services) and the device (out of scope of the TOE), based on the confidence rating, is responsible to maintain the unlocked state or transit to the locked state and protect the sensitive data during the locked state.
+CMFA, the TOE, is composed of the firmware (where applicable) and software attached or running on the computer. CMFA determines the trust score and pass it to the computer (or external services) and the device (out of scope of the TOE), based on the trust score, is responsible to keep the unlocked state or transit to the locked state and protect the sensitive data during the locked state.
 
 An example of a CMFA boundary within the overall context of the inputs used for continuous authentication is shown below.
 
@@ -85,10 +76,10 @@ An example of a CMFA boundary within the overall context of the inputs used for 
 image::toe-boundary.png[width=80%,align="center"]
 
 * The purple boundary is the CMFA TOE, including the CMFA Engine, the CMFA Signal Verification and the Admin interface
-** CMFA Engine is the core of the system, determining the confidence rating based on inputs from sensors and configuration data
-** CMFA Signal Verification is used to establish the trust level of the incoming sensor/connection input (Yellow boxes)
-** Admin is the component that receives configuration data from the external management service (such as an EMM)
-* The orange Biometric Sensors & PAD are for any dedicated biometric sensors (such as face, fingerprint or vein) that are used for the conventional authentication (or has been validated to) the requirements of [BIOPP-Module]. CMFA Engine will set the confidence rating to the highest value when biometric verification using one of these dedicated biometric sensors succeeds. Biometric sensors (e.g. microphone for voice) that are not the dedicated biometric ones may also be used to maintain or increase the confidence rating.
+** CMFA Engine is the core of system, determining the trust score based on inputs from sensors and configuration data
+** CMFA Signal Verification is used to ensure trust of the incoming sensor/connection input (Yellow boxes)
+** Admin is the component that received configuration data from the external management service (such as an EMM)
+* The orange Biometric Sensors & PAD are for any dedicated biometric sensors (such as face, fingerprint or vein) that are used for the conventional authentication (or has been validated to) the requirements of [BIOPP-Module]. CMFA Engine sets the trust score to the highest value when biometric verification using these dedicated biometric sensors succeeds. Biometric sensors (e.g. microphone for voice) that are not the dedicated biometric ones may also be used to maintain or increase the trust score.
 * The yellow sensors/connection input can cover any type of input that may be used. For example, the type of Wi-Fi connection, location data, time or wearable device connectivity.
 The different color lines are used to show an example of paths and the level of trust that is associated with the input.
 
@@ -101,16 +92,16 @@ The different color lines are used to show an example of paths and the level of 
 The configuration process for CMFA is likely to encompass multiple steps, covering both administrator and user actions. The administrator may provide configuration information such as acceptable Wi-Fi networks, time settings, location data or specific sensors to be used. The user may provide biometric data for user enrolment if additional biometric sensor is configured, or select external devices to use as sensor input. This combination of information provided by the administrator and user would be used for configuration of CMFA.
 
 == Use Case(s)
-CMFA is used primarily for continuous authentication of a user for computers such as smartphones, where the confidence rating is used to determine the locked state of the computer. 
+CMFA is used primarily for continuous authentication of a user for computers such as smartphones, where the trust score is used to determine the locked state of the computer. 
 
-This confidence rating can also be provided to external services such as a PC login at the office, building or room entrance control or ATMs. Those external services may communicate CMFA to the computer so that the external services can request additional user data, such as specific sensor information, to perform secondary CMFA analysis before granting the access to a user.
+This trust score can also be provided to external services such as a PC login at the office, building or room entrance control or ATMs. Those external services may communicate CMFA to the computer so that the external services can request additional user data, such as specific sensor information, to perform secondary CMFA analysis before granting the access to a user.
 
 The first version of the PP-Module will focus on the use case that the CMFA is used for continuously authentication to determine the state of a computer itself. Additional PP-Modules have to be created for other use cases.
 
 == Resources to be protected
-* The confidence rating that is determined by the CMFA that is provided to the computer (or trusted external third party). 
+* The trust score that is determined by the CMFA and passed to the computer. 
 * Any personal information gathered by CMFA, such as biometric information and behavior patterns of a user.
-* Any data used to determine the confidence rating including CMFA configuration data.
+* Any data used to determine the trust score including CMFA configuration data.
 
 (User data stored on the computer shall be protected by the computer itself)
 
@@ -140,24 +131,26 @@ NOTE: Explicit user permission is required if CMFA monitors detailed user behavi
 
 *CMFA shall configure an adequate set of sensors for continuous authentication.*
 
+NOTE: CMFA shall not use only one sensor that is easy to spoof (e.g. microphone) or sensor that pass input to CMFA through non-secure execution environment. CMFA shall always use multiple sensors that can’t be spoofed at once by a Basic potential attacker. Some guidance should be provided in the SD about how to determine the adequate set of sensors.
+
 *CMFA shall continuously determine the current level of confidence in the authentication of a user based on inputs from sensors and configuration data.*
 
 [NOTE]
 ====
 PP-module defines SFRs that correspond to this requirement (see below) and SD describes evaluation activities to test those SFR (e.g. take the device out of the office and check the device is locked immediately after evaluator move the device far away enough from registered (trusted) place) 
 
-_TOE shall determine the confidence rating with following rule and update the rating at [Assignment: min or max time interval of update]_
+_TOE shall determine the trust score with following rule and update the score at [Assignment: min or max time interval of update]_
 
-_Increase the rating when [Assignment: some conditions (e.g. recognize a user’s voice] are met_ 
+_Increase the score when [Assignment: some conditions (e.g. recognize a user’s voice] are met_ 
 
-_Decrease the rating when [Assignment: some conditions (e.g. located in untrusted location)] are met_
+_Decrease the score when [Assignment: some conditions (e.g. located in untrusted location)] are met_
 
-_Keep the rating when [Assignment: some conditions (e.g. signing into the company wifi)] are met_
+_Keep the score when [Assignment: some conditions (e.g. signing into the company wifi)] are met_
 
-_Reset the rating when [Assignment: some conditions (e.g. detect sensor failure)]_
+_Reset the score when [Assignment: some conditions (e.g. detect sensor failure)]_
 ====
 
-*CMFA shall accurately determine the current confidence rating of a user based on inputs from sensors and configuration data.*
+*CMFA shall accurately determine the current level of confidence in the authentication of a user based on inputs from sensors and configuration data.*
 
 [NOTE]
 ====
@@ -165,7 +158,7 @@ PP-module defines SFRs that correspond to this requirement (see below) and SD de
 
 _TOE shall provide a CMFA that meets [Assignment: method of measurement of performance and minimum performance requiremet]_
 
-There is no standard to measure CMFA performance because there are many combination of sensors that can be used by CMFA. However, vendor can set own performance matrix to objectively measure the accuracy of CMFA authentication. For example, vendor can create the test scenario and measure mean time to detect (time CMFA need to detect another user is start using a device (and decrease the confidence rating low enough so that the computer can transit to the locked state immidiately)).
+There is no standard to measure CMFA performance because there are many combination of sensors that can be used by CMFA. However, vendor can set own performance matrix to objectively measure the accuracy of CMFA authentication. For example, vendor can create the test scenario and measure mean time to detect (time CMFA need to detect another user is start using a device (and decrease the trust score low enough so that the computer can transit to the locked state immidiately)).
 ====
 
 *CMFA shall protect any data, especially sensitive personal information, used for continuous authentication in cooperation with its operating environment.*
@@ -185,14 +178,14 @@ NOTE: BIO-PP Module and SD can be reused for this requirement
 ====
 CMFA depends on two components to operate as specified, a computer and dedicated biometric sensors used for conventional authentication. This ESR assumes that both components conform the relevant PPs.
 
-A computer is responsible for locking device based on the confidence rating, protecting the data during the locked stat and maintain the secure execution environment for CMFA. Those security requirements are defined in the relevant PP such as [MDFPP].
+A computer is responsible for locking device based on the trust score, protecting the data during the locked stat and maintain the secure execution environment for CMFA. Those security requirements are defined in the relevant PP such as [MDFPP].
 
 Dedicated biometric sensors is responsible for verifying a user and protect user’s biometric information. Those security requirements are defined in the relevant PP such as [BIOPP-Module].
 ====
 
 *Admin or user configures the CMFA and its operating environment correctly in a manner to ensure that the security policies will be enforced*
 
-*Any user enrolment process is assumed to be done by a legitimate user in the protected environment*
+*If CMFA uses biometric sensors or learns behavior patterns of a user, biometric enrolment and learning is assumed to be done by a legitimate user in the protected environment*
 
 *A computer that runs CMFA is assumed to be used in a controlled and observable environment*
 
@@ -202,13 +195,9 @@ NOTE: It is assumed that an attacker can steal the unlocked device but need to t
 
 Requirements captured in this section may already be realized in some products in this technology class, but this ESR is not mandating these capabilities exist in “baseline” level products.
 
-*CMFA shall prevent verification from being successful when presentation attack instruments are used* 
+*CMFA  shall  prevent  verification  from  being  successful  when  presentation attack instruments are used* 
 
 NOTE: PAD for enrolment is unnessary for CMFA (Some banks require PAD for biometric enrolment but I believe that accurate PAD for biometric enrolment is very difficult to achive).
-
-*CMFA shall learn user behavior that is considered normal and utilize this dynamic configuration data in addition to static configurations to determine the confidence rating*
-
-NOTE: This is for the "learning" capability that generally doesn't seem to be available today on-device
 
 == Outside the Scope of Evaluation
 *none*
