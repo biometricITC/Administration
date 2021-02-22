@@ -74,7 +74,7 @@ CMFA determines the current level of authentication of a user, the confidence ra
 
 To properly determine a confidence rating, CMFA must be configured with an adequate set of sensor inputs. The set of sensor inputs must, in combination, be able to provide protection against attacks that meet the level of Basic Attack Potential.
 
-The confidence rating is continuously maintained and updated by CMFA and where it can be used by the device to determine whether to remain in the unlocked state or transit to the locked state based on the rating. The confidence rating can also be provided to external program or service for more granular access control. 
+The confidence rating is continuously maintained and updated by CMFA and where it can be used by the device to determine whether to remain in the unlocked state or transit to the locked state based on the rating. The confidence rating may also be provided to external program or service for more granular access control. 
 
 ==== CMFA boundary
 CMFA, the TOE, is composed of the firmware (where applicable) and software attached to or running on the computer. CMFA determines the confidence rating and provides it to the computer (or external services) and the device (out of scope of the TOE), based on the confidence rating, is responsible to maintain the unlocked state or transit to the locked state and protect the sensitive data during the locked state.
