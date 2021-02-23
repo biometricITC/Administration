@@ -172,7 +172,7 @@ There is no standard to measure CMFA performance because there are many combinat
 
 NOTE: sensitive personal information shall be protected securely and shall not be transmitted to the entity outside of the secure execution environment without explicit user permission (because it breaks the personal information protection law like GDPR)
 
-*If biometric sensors are specified for trusted CMFA input, the specified biometric must verify users less than the claimed error rates (i.e. FAR and FRR) for the biometic sensors*
+*If biometric sensors are specified for trusted CMFA input, the specified biometric must verify users at less than the claimed error rates (i.e. FAR and FRR) for the biometic sensors*
 
 == Assumptions
 *A computer conforms to the relevant PP and is assumed to be configured in a secure manner*
