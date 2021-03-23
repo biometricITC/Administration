@@ -152,10 +152,5 @@ Requirements captured in this section may already be realized in some products i
 
 *CMFA shall prevent verification from being successful when presentation attack instruments are used* 
 
-NOTE: PAD for enrolment is unnessary for CMFA (Some banks require PAD for biometric enrolment but I believe that accurate PAD for biometric enrolment is very difficult to achive).
-
-
 == Outside the Scope of Evaluation
 *none*
-
-NOTE: We should list such functions provided by the TOE (CMFA) but out of scope of evaluation here. I think the all CMFA functional requirements are covered by this ESR.
