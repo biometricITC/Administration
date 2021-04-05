@@ -96,7 +96,7 @@ The configuration process for CMFA is likely to encompass multiple steps, coveri
 == Use Case(s)
 CMFA is used primarily for continuous authentication of a user for computers such as smartphones, where the confidence rating is used to determine the locked state of the computer. 
 
-In addition to being used by the computer for determining the locked state, the confidence rating can also be provided other systems, such as applications installed on the computer or to external services such as a PC login at the office, building or room entrance control or ATMs. Those external services may communicate CMFA to the computer so that the external services can request additional user data, such as specific sensor information, to perform secondary CMFA analysis before granting the access to a user.
+In addition to being used by the computer for determining the locked state, the confidence rating can also be provided other systems, such as applications installed on the computer or to external services such as a PC login at the office, building or room entrance control or ATMs. Those external services may communicate CMFA related information to the computer so that the external services can request additional user data, such as specific sensor information, to perform secondary CMFA analysis before granting the access to a user.
 
 The first version of the PP-Module will focus on the use case that the CMFA is used for continuously authentication to determine the state of a computer itself. Additional PP-Modules have to be created for other use cases.
 
@@ -110,11 +110,11 @@ The first version of the PP-Module will focus on the use case that the CMFA is u
 == Attacker access
 * An attacker can steal the computer in the unlocked state however an attacker needs to take some actions (e.g. take the computer out of office that GPS can detect) before accessing CMFA data, user data or service stored in the computer. If the CMFA uses biometric sensors or learns behavior patterns of a user, biometric enrolment and learning shall be done by a legitimate user in the protected environment (i.e. an attacker cannot attack the CMFA during biometric enrolment and learning user behavior).
 
-* [If a biometric sensor is used for CMFA, an attacker may present any kind of presentation attack instruments during verification for the sake of impersonation.]
+* [If a biometric sensor is used for CMFA, an attacker may present any kind of presentation attack instruments during biometric verification for the sake of impersonation.]
 
-* [If a biometric sensor is used for CMFA, an attacker may try to spoof sensor/connection input during verification for the sake of impersonation.]
+* [If a biometric sensor is used for CMFA, an attacker may try to spoof sensor/connection input during biometric verification for the sake of impersonation.]
 
-Normal text indicates attacker access related to Essential Security Requirements and (Normal text within square parenthesis) indicate ones related to Optional Extensions.
+Normal text indicates attacker access related to Essential Security Requirements and [Normal text within square parenthesis] indicate ones related to Optional Extensions.
 
 == Attacker Resources
 Any resources allowed to be used by the basic attack potential to examine and attack CMFA and inputs used by CMFA.
@@ -150,7 +150,7 @@ All of the security functionalities are contained and executed within the bounda
 
 Requirements captured in this section may already be realized in some products in this technology class, but this ESR is not mandating these capabilities exist in “baseline” level products.
 
-*CMFA shall prevent verification from being successful when presentation attack instruments are used* 
+*CMFA shall prevent biometric verification from being successful when presentation attack instruments are used* 
 
 == Outside the Scope of Evaluation
 *none*
