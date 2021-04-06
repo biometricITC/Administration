@@ -96,7 +96,7 @@ The configuration process for CMFA is likely to encompass multiple steps, coveri
 == Use Case(s)
 CMFA is used primarily for continuous authentication of a user for computers such as smartphones, where the confidence rating is used to determine the locked state of the computer. 
 
-In addition to being used by the computer for determining the locked state, the confidence rating can also be provided other systems, such as applications installed on the computer or to external services such as a PC login at the office, building or room entrance control or ATMs. Those external services may communicate CMFA related information to the computer so that the external services can request additional user data, such as specific sensor information, to perform secondary CMFA analysis before granting the access to a user.
+In addition to being used by the computer for determining the locked state, the confidence rating can also be provided to other systems, such as applications installed on the computer or to external services such as a PC login at the office, building or room entrance control or ATMs. Those external services may communicate CMFA related information to the computer so that the external services can request additional user data, such as specific sensor information, to perform secondary CMFA analysis before granting the access to a user.
 
 The first version of the PP-Module will focus on the use case that the CMFA is used for continuously authentication to determine the state of a computer itself. Additional PP-Modules have to be created for other use cases.
 
