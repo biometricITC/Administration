@@ -5,7 +5,7 @@
 :table-caption: Table
 :imagesdir: images
 :revnumber: 0.1
-:revdate: March 22, 2021
+:revdate: April 5, 2021
 :xrefstyle: full
 
 :iTC-longname: Biometrics Security
@@ -40,7 +40,7 @@ The {itc-longname} iTC has been requested by vendors to develop an Essential Sec
 
 === References
 * [#BIOPP-Module]#[BIOPP-Module]# - collaborative PP-Module for Biometric enrolment and verification - for unlocking the device - [BIOPP-Module]
-* [#PP_MD]#[PP_MD_V3.2]# Protection Profile for Mobile Device Fundamentals, Version: 3.2.
+* [#PP_MD]#[PP_MD_V3.2]# - Protection Profile for Mobile Device Fundamentals, Version: 3.2.
 
 === Glossary
 Computer::
@@ -58,7 +58,7 @@ Input trust (Trusted input)::
 This document describes the high-level fundamental security requirements expected of any computers that implement CMFA. It is intended to provide a minimal, baseline set of requirements which can be built upon by the future PP-Module to provide an overall set of security solutions for CMFA running on a computer.
 
 === Conventional authentication
-Most computers implement user authentication functionality. This type of authentication is called "conventional authentication" hereafter. Conventional authentication requires the user to successfully pass a verification at a point in time to unlock the computer. In case of a mobile device, the <<PP_MD>> requires the mobile device to authenticate a user with password or biometric and lock the user after the fixed time of inactivity. 
+Most computers implement user authentication functionality. This type of authentication is called "conventional authentication" hereafter. Conventional authentication requires the user to successfully pass a verification at a point in time to unlock the computer. In case of a mobile device, the <<PP_MD>> requires the mobile device to authenticate a user with password or biometric and lock the computer after the fixed time of inactivity. 
 
 Conventional authentication suffers from several shortcomings such as the inconvenience of frequent unlocking and several adversarial attacks (e.g., shoulder surfing and smudge attacks for password authentication). Conventional authentication is at a point in time, so once the user has authenticated successfully, there is no way to know if the computer is still under the control of the authenticating user. CMFA extends the conventional authentication and delivers continuous and transparent authentication to reduce such shortcomings.
 
@@ -80,15 +80,14 @@ image::toe-boundary.png[width=80%,align="center"]
 * The purple boundary is the CMFA TOE, including the CMFA Engine, the CMFA Signal Verification and the Admin interface
 ** CMFA Engine is the core of the system, determining the confidence rating based on inputs and configuration data
 ** CMFA Signal Verification is used to establish the trust level of the incoming input data (Yellow boxes)
-** Admin is the component that receives configuration data from the external management service (such as an EMM)
+** Admin is the component that receives configuration data from the external management service (such as an MDM)
 * The orange Biometric Sensors & PAD are for any dedicated biometric sensors (such as face, fingerprint or vein) that are used for the conventional authentication (or has been validated to) the requirements of [BIOPP-Module]. CMFA Engine will set the confidence rating to the highest value when biometric verification using one of these dedicated biometric sensors succeeds. Biometric sensors (e.g. microphone for voice) that are not the dedicated biometric ones may also be used to maintain or increase the confidence rating.
 * The yellow sensors/connection input can cover any type of input that may be used. For example, the type of Wi-Fi connection, location data, time or wearable device connectivity. They can also include non-certified biometrics that may also be used for input.
-The different color lines are used to show an example of paths and the level of trust that is associated with the input.
-
-* Black lines show "internal" communications between components
-* Green lines show highly trusted input (trust established both by the source and the path to the TOE) that can be trusted fully without additional checks (and hence is input directly to the CMFA Engine)
-* Red lines show less trusted input that must be checked before being used
-* Yellow, dashed lines show potential alternative paths for sources (generally for sources that may be normally considered highly trusted but which may want to be separately verified anyway)
+* Black lines show "internal" communications between components as well as management of the CMFA TOE by a management system (such as an MDM).
+* The different color lines between sensors and the TOE are used to show an example of paths and the level of trust that is associated with the input.
+** Green lines show highly trusted input (trust established both by the source and the path to the TOE) that can be trusted fully without additional checks (and hence is input directly to the CMFA Engine).
+** Red lines show less trusted input that must be checked before being used.
+** Yellow, dashed lines show potential alternative paths for sources (generally for sources that may be normally considered highly trusted but which may want to be separately verified anyway).
 
 ==== CMFA configuration
 The configuration process for CMFA is likely to encompass multiple steps, covering both administrator and user actions. The administrator may provide configuration information such as acceptable Wi-Fi networks, time settings, location data or specific sensors to be used. The user may provide biometric data for user enrolment if additional biometric sensor is configured, or select external devices to use as sensor input. This combination of information provided by the administrator and user would be used for configuration of CMFA.
