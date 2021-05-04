@@ -4,8 +4,8 @@
 :toclevels: 3
 :table-caption: Table
 :imagesdir: images
-:revnumber: 0.1
-:revdate: April 5, 2021
+:revnumber: 1.0
+:revdate: May 4, 2021
 :xrefstyle: full
 
 :iTC-longname: Biometrics Security
@@ -31,7 +31,7 @@
 |{revdate}
 
 |Supersedes
-|
+|N/A
 
 |===
 
