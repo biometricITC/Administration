@@ -1,8 +1,8 @@
-= Biometrics Security Submitting Modality Updates
+= Biometrics Security Submitting Toolbox and Modality Updates
 :showtitle:
 :table-caption: Table
 :revnumber: 0.2
-:revdate: 2021-07-23
+:revdate: 2021-07-27
 
 :iTC-longname: Biometrics Security
 :iTC-shortname: BIO-iTC
