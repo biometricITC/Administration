@@ -23,7 +23,7 @@
 
 |Chair
 |Brian Wood
-|Samsung
+|Google
 |Vendor
 |6-18-2020
 
