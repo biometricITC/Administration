@@ -96,7 +96,7 @@ The evaluator is not expected to determine the exploitability for new artefact s
 If the new artefacts would meet the conditions above, the evaluator must create a test plan using the new artefacts that follows, to the extent possible, the format and structure of the existing plans for that modality in the exsting Toolbox. Any new plans should follow the same format and level of detail as the existing items within the modality Toolbox.
 
 === Active Evaluation New Artefact Approval Timeline
-All artefact types must be approved by the {itc-shortname} to be used in an evaluation. As this process can take a long time, the {itc-shortname} has established a two-stage process to minimize delays during an active evaluation.
+All artefact types must be approved by the {itc-shortname} to be included in the Toolbox. As this process can take a long time, the {itc-shortname} has established a two-stage process to minimize delays during an active evaluation.
 
 [ditaa, approvaltimeline, png]
 ....
@@ -124,4 +124,4 @@ The {itc-shortname} expects the evaluator to be responsive during the initial re
 After review, the {itc-shortname} may determine that a new artefact is not in scope of the requirements as specified in the current BIOPPM and BIOSD. In this case, the new artefacts cannot be used as part of an evaluation for any claims. This outcome will be provided at the end of the review period.
 
 === New Artefact Approval Timeline Without an Active Evaluation
-If an evaluator provides a new artefact test plan without an associated active evaluation, the {itc-shortname} will utilize the normal public review process before updating the apporpriate Toolbox.
+If an evaluator provides a new artefact test plan without an associated active evaluation, the {itc-shortname} will utilize the normal https://github.com/biometricITC/Administration/Public_review_process.adoc[public review process] before updating the apporpriate Toolbox.
