@@ -96,7 +96,7 @@ The following table specifies the requirements that need to be met for participa
 |Scheme
 |Schemes that may participate or utilize the scripts for evaluations under their purview.
 
-|{IT-shortname} members who will actively participate
+|{iTC-shortname} members who will actively participate
 |Members of the iTC who are willing to meet the confidentiality requirements to participate and do so actively.
 
 |External Groups
