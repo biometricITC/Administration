@@ -5,15 +5,15 @@
 :imagesdir: images
 :icons: font
 :revnumber: 1
-:revdate: 2023-09-19
+:revdate: 2024-03-19
 :xrefstyle: full
 
 :iTC-longname: Biometrics Security
 :iTC-shortname: BIO-iTC
-:iTC-email: isec-itc-bio-info@ipa.go.jp
+:iTC-email: px-isec-itc-bio-info@ipa.go.jp
 :iTC-website: https://biometricitc.github.io/
 :iTC-GitHub: https://github.com/biometricITC/cPP-biometrics
-:iTC-ITname: PAD-L2
+:iTC-ITname: PAD-L2 Working Group
 
 == Introduction
 The {iTC-shortname} is creating a new working group, {iTC-ITname}, to manage a second set of Presentation Attack Detection scripts called PAD Level 2. These attacks will have a higher attack potential (PAD Level 1 resists attacks to AP 9), and as such will be more tightly controlled information. This document specifies how access to the repository will be controlled and the expectations for working on this ongoing project.
@@ -49,6 +49,8 @@ Membership in the {iTC-ITname} is highly restricted. While it is open to all mem
 If it is determined that these rates are not being met, participation rates in the {iTC-ITname} may be checked as determined by the chair of the {iTC-ITname}. The {iTC-ITname} may then determine actions to be taken regarding members who are unable or unwilling to meet the obligations of membership.
 
 Membership in the {iTC-ITname} by a scheme representative does not imply any requirement on the represented scheme to accept any changes approved by the {itc-itname}. Scheme decisions about what updates to accept or reject are determined by the scheme and not bound to any representation within the {iTC-ITname}.
+
+Voting within the {iTC-ITname} will be compliant to the {iTC-shortname} Terms of Reference.
 
 === {iTC-ITname} Voting Member Size
 As the {iTC-ITname} is designed to be a subset of the entire {iTC-shortname}, it will have a defined size of the voting membership to ensure proper representation. 
@@ -96,7 +98,7 @@ The following table specifies the requirements that need to be met for participa
 |Scheme
 |Schemes that may participate or utilize the scripts for evaluations under their purview.
 
-|{IT-shortname} members who will actively participate
+|{iTC-shortname} members who will actively participate
 |Members of the iTC who are willing to meet the confidentiality requirements to participate and do so actively.
 
 |External Groups
@@ -153,4 +155,4 @@ Also note that an organization is not guaranteed membership in the {iTC-ITname},
 
 Any time there is a change (or a request for a change), the {iTC-ITname} should be notified. While an applicant only needs to notify the chair, requests to leave or be replaced should be sent to the entire {iTC-ITname}.
 
-The {iTC-ITname} group will review the access list at least every 6 months for active participation and need for access.
+The {iTC-ITname} group will review the access list at least every 6 months for active participation and need for access. A lack of active participation may lead to revoking access to the repository (this does not mean it cannot be restored, only that it may be revoked based on the results of the activity review).
