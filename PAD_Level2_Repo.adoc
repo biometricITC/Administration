@@ -1,0 +1,158 @@
+= Biometrics Security iTC PAD Level 2 Repository Administration
+:showtitle:
+:sectnumlevels: 3
+:table-caption: Table
+:imagesdir: images
+:icons: font
+:revnumber: 1
+:revdate: 2024-03-19
+:xrefstyle: full
+
+:iTC-longname: Biometrics Security
+:iTC-shortname: BIO-iTC
+:iTC-email: px-isec-itc-bio-info@ipa.go.jp
+:iTC-website: https://biometricitc.github.io/
+:iTC-GitHub: https://github.com/biometricITC/cPP-biometrics
+:iTC-ITname: PAD-L2 Working Group
+
+== Introduction
+The {iTC-shortname} is creating a new working group, {iTC-ITname}, to manage a second set of Presentation Attack Detection scripts called PAD Level 2. These attacks will have a higher attack potential (PAD Level 1 resists attacks to AP 9), and as such will be more tightly controlled information. This document specifies how access to the repository will be controlled and the expectations for working on this ongoing project.
+
+The membership of the {iTC-ITname} is expected to be a subset of the overall iTC membership. Being a member of the group comes with an expectation of a time commitment to regularly participate, both in terms of creating/maintaining the attack scripts and responding to questions about them for evaluations.
+
+The repository and work of the {iTC-ITname} will be in a private respository only accessible by the {iTC-ITname} members.
+
+== General Membership Information
+
+=== {iTC-ITname} Participation
+{iTC-ITname} members are expected to actively contribute to group activities and participate in the decision making process.
+
+Membership in the {iTC-ITname} is highly restricted. While it is open to all members if the {iTC-shortname}, each member shall be approved specifically based on the reasons for participating. No more than 2 participants from an organization will have access to the repository. Only members of the {iTC-shortname} can become {iTC-ITname} members. {iTC-ITname} will inform the {iTC-shortname} about all changes to the list of members.
+
+.Membership Participation Requirements
+[cols=".^1,.^1,.^2",options="header"]
+|===
+|Participation 
+|Minimum Activity Level
+|Description
+
+|Meetings (online or in person)
+|50%
+|Participation directly (or if allowed, by designated representative) in regularly scheduled {iTC-ITname} meetings
+
+|Voting
+|75%
+|Voting, either by GitHub approvals, email ballots or live meeting, on the proposals (this is not meant to be voting approvals this often, only voting actively this often)
+
+|===
+
+If it is determined that these rates are not being met, participation rates in the {iTC-ITname} may be checked as determined by the chair of the {iTC-ITname}. The {iTC-ITname} may then determine actions to be taken regarding members who are unable or unwilling to meet the obligations of membership.
+
+Membership in the {iTC-ITname} by a scheme representative does not imply any requirement on the represented scheme to accept any changes approved by the {itc-itname}. Scheme decisions about what updates to accept or reject are determined by the scheme and not bound to any representation within the {iTC-ITname}.
+
+Voting within the {iTC-ITname} will be compliant to the {iTC-shortname} Terms of Reference.
+
+=== {iTC-ITname} Voting Member Size
+As the {iTC-ITname} is designed to be a subset of the entire {iTC-shortname}, it will have a defined size of the voting membership to ensure proper representation. 
+
+.{iTC-ITname} Voting Member Size
+[cols=".^1,.^1",options="header"]
+|===
+|Level 
+|Number
+
+|Minimum Size
+|3
+
+|Maximum Size
+|9
+
+|===
+
+The {iTC-ITname} will stop working on incoming requests if the membership falls below the minimum size. In this case, incoming requests would be handled by the full {iTC-shortname} until enough members can be added to the {iTC-ITname} to reconstitute it.
+
+
+The maximum or minimum sizes can only be changed by the full {iTC-shortname}.
+
+== Determining Membership
+===  Requirements to Participate
+While membership is generally open to the {iTC-shortname}, there are specific requirements to participate given the sensitive nature of the attack scripts.
+
+The following table specifies the requirements that need to be met for participating in the {iTC-ITname}. These are not meant to be a "you need to meet all of the" requirements, but different justifications for participation.
+
+.{iTC-ITname} Membership Requirements
+[cols=".^1,.^3",options="header"]
+|===
+|Justification
+|Description
+
+|Biometrics SME
+|This would be for any person or organization who is an SME in Biometric Presentation Attacks that can provide direct experience in generating attack scripts.
+
+|Lab preparing or performing evaluation
+|A lab that will be performing evaluations using the Biometrics PP-Module. Labs must show intent to perform (or active ongoing) evaluations using the PP-Module.
+
+|Vendor undergoing evaluation
+|Vendors undergoing an evaluation may be granted access to the requirements. This is not guaranteed and requires additional participation from the vendor vs just being given access to the set of tools.
+
+|Scheme
+|Schemes that may participate or utilize the scripts for evaluations under their purview.
+
+|{iTC-shortname} members who will actively participate
+|Members of the iTC who are willing to meet the confidentiality requirements to participate and do so actively.
+
+|External Groups
+|Where partnerships or liaison agreements may be in place to provide common usage for Biometrics PAD testing requirements.
+
+|===
+
+=== Initial Membership
+The initial membership of the {iTC-ITname} would be determined by the general iTC. The iTC will first select the "officers" of the {iTC-ITname} (two or three, depending on the iTC needs). Selection of the initial officers is by the normal process defined by the ToR. 
+
+After the officers of the {iTC-ITname} have been named, the remaining membership in the {iTC-ITname} would be by volunteer/nomination up to the maximum number determined by the iTC. Up until the maximum number has been reached, members should be accepted or rejected by consensus.
+
+Once the {iTC-ITname} has been constituted, membership changes are handled by the {iTC-ITname} itself and not the iTC.
+
+=== Membership Changes
+The membership of the {iTC-ITname} is not static, and can be changed based on the needs of the {iTC-ITname} as well as the ability of a member to participate. The following table shows how requests related to changing membership will be handled.
+
+In general, approval to join the {iTC-ITname} is by consensus (assuming there is space). If there is no consensus, voting according to the ToR will be used.
+
+To join the {iTC-ITname}, the applicant must contact the chairperson and request membership.
+
+.{iTC-ITname} Membership Changes
+[cols=".^1,.^1,.^3",options="header"]
+|===
+|Change
+|Current Size
+|Outcome
+
+|Join
+|Full
+|If there is no space, the chair can start a wait list of people looking to join (or request to increase the size of the {iTC-ITname}). 
+
+The chair can also ask if anyone is willing to voluntarily leave for a replacement assuming there is consensus on the person joining.
+
+|Join
+|Not Full
+|The {iTC-ITname} would vote (looking for consensus) on whether the person should be allowed to join.
+
+|Replacement
+|Any
+|This is focused on someone from an organization leaving and having someone new from the same organization take their place. The new person would need consensus to join.
+
+Also note that an organization is not guaranteed membership in the {iTC-ITname}, so this is not guaranteed if there are people waiting to join. In that case the {iTC-ITname} should be notified will vote to determine whether a replacement will be accepted.
+
+|Leave
+|Any
+|As long as the {iTC-ITname} will remain above the minimum level set, there is no issue with someone leaving. If there are waiting people interested in joining, they could be asked to join. If not, then a general call could be made to check for interest.
+
+|Forced Leave
+|Any
+|Forcing someone to leave would generally come at the discretion of the officers and covers both issues that may arise from inactive participation but also issues related to not maintaining the confidentiality of the information of the {iTC-ITname}.
+
+|===
+
+Any time there is a change (or a request for a change), the {iTC-ITname} should be notified. While an applicant only needs to notify the chair, requests to leave or be replaced should be sent to the entire {iTC-ITname}.
+
+The {iTC-ITname} group will review the access list at least every 6 months for active participation and need for access. A lack of active participation may lead to revoking access to the repository (this does not mean it cannot be restored, only that it may be revoked based on the results of the activity review).
